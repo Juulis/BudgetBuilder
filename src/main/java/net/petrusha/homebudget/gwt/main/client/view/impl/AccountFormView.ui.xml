@@ -1,0 +1,38 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder" 
+			 xmlns:g="urn:import:com.google.gwt.user.client.ui"
+			 xmlns:hb="urn:import:net.petrusha.homebudget.gwt.widget.client">
+    
+
+	<ui:style>
+			   
+	</ui:style>
+
+	<g:HTMLPanel styleName="account-view">
+	    <table>
+	    	<tr>
+	    		<td><g:Label ui:field="nameLabel" >Name:</g:Label></td>
+	    		<td><g:TextBox ui:field="nameInput"></g:TextBox></td>
+	    	</tr>
+	    	<tr>
+	    		<td><g:Label ui:field="typeLabel" >Type:</g:Label></td>
+	    		<td><g:ListBox ui:field="typeInput"></g:ListBox></td>
+	    	</tr>
+	    	<tr>
+	    		<td><g:Label ui:field="currencyLabel" >Currency:</g:Label></td>
+	    		<td><hb:DropDown ui:field="currencyInput"></hb:DropDown></td>
+	    	</tr>
+	    	<tr>
+	    		<td><g:Label ui:field="amountLabel" >Currency:</g:Label></td>
+	    		<td><g:TextBox ui:field="amountInput">0.0</g:TextBox></td>
+	    	</tr>
+	    	<tr>
+	    		<td colspan="2" align="right">
+	    			<g:Button ui:field="cancelButton">Cancel</g:Button>
+	    		    <g:Button ui:field="saveButton">Save</g:Button>
+	    		</td>
+	    		
+	    	</tr>
+	    </table>
+	</g:HTMLPanel>
+</ui:UiBinder>

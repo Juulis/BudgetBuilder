@@ -1,0 +1,14 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder" 
+			 xmlns:g="urn:import:com.google.gwt.user.client.ui">
+
+	<ui:style>
+		
+	</ui:style>
+	<g:HTMLPanel styleName="main-view">
+		<g:SimplePanel ui:field="header"></g:SimplePanel>
+		<g:SimplePanel ui:field="body" styleName="pdng2em"></g:SimplePanel>
+		<g:SimplePanel ui:field="footer" styleName="footer"></g:SimplePanel>
+	</g:HTMLPanel>
+	
+</ui:UiBinder>

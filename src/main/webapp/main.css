@@ -1,0 +1,117 @@
+
+html, body {
+
+}
+
+.main-view {
+
+}
+
+.center {
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+
+.border-right {
+	border-right: 1px solid #eee;
+}
+
+.border-left {
+	border-left: 1px solid #eee;
+}
+
+.float-left {
+	float:left;
+}
+
+.width-300 {
+	width: 300px;	
+}
+
+.width-100 {
+	width: 100px;
+}
+
+.width-20 {
+	width: 20px;
+}
+
+.clear {
+	clear: both;
+}
+
+
+/** Header Styles */
+.header-panel {
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 0;
+	margin-botom: 5px;
+	
+	border-bottom: 1px solid #aaa;
+	background-color: #eee;
+}
+
+.footer {
+	border-top: 1px solid #eee;	
+	min-height: 38px;
+}
+
+.footer-panel {
+	
+}
+
+.logo {
+	margin: 5px;
+}
+
+
+
+.user-info {
+	margin: 10px;
+	float: right;
+}
+	
+.pdng2em {
+	padding: 2em;
+}
+
+
+/*  Payment Category  */
+
+.categories-panel {
+	padding: 5px;
+}
+
+.categories-panel .total {
+	font-size: 1.2em;
+	color:#555;
+	border-top: 1px solid #ccc; 
+}
+
+.payment-category {
+	
+}
+
+.payment-category .header {
+	font-weight: bold;
+}
+
+.payment-category .description {
+	font-size: 0.8em;
+	color: #ccc;
+}
+
+.price-positive {
+	color: green; 
+}
+
+.price-negative {
+	color: red;
+}
+
+
+
+

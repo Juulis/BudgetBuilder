@@ -1,0 +1,35 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder" 
+			 xmlns:g="urn:import:com.google.gwt.user.client.ui">
+    
+
+	<ui:style>
+		.account-check, 
+		.account-title,
+		.account-type,
+		.account-amount,
+		.account-currency {
+		    float: left;
+		    padding: 5px;
+		}
+		
+		.account-title { width: 300px; }
+        
+        .account-type { width: 50px; }
+        
+        .account-ammount { width: 50px; }
+        
+        .account-carrency { width: 50px; }	   
+	   
+	</ui:style>
+
+	<g:HTMLPanel styleName="account-view">
+	    <div class="{style.account-check}"><g:CheckBox ui:field="check"></g:CheckBox> </div>
+		<div class="{style.account-title}"><g:Anchor ui:field="title" href="#">Account title</g:Anchor></div>
+		<div class="{style.account-type}"><g:Label ui:field="type">B</g:Label></div>
+		<div class="{style.account-amount}"><g:Label ui:field="ammount">2645.50</g:Label></div>
+		<div class="{style.account-currency}"><g:Label ui:field="currency">USD</g:Label></div>
+		<div class="clear"></div>
+	</g:HTMLPanel>
+	
+</ui:UiBinder>

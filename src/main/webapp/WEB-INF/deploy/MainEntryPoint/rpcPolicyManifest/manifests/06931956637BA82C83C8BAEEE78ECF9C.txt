@@ -1,0 +1,2 @@
+serviceClass: net.petrusha.homebudget.gwt.main.client.MainService
+path: 99FD53E2516E9BB48A6EC67B406B404F.gwt.rpc

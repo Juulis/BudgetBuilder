@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module rename-to='Budget'>
+  <!-- Inherit the core Web Toolkit stuff.                        -->
+  <inherits name='com.google.gwt.user.User' />
+  
+  <inherits name='net.petrusha.homebudget.HomeBudgetModel'/>
+  <inherits name='net.petrusha.homebudget.gwt.widget.Widgets'/>
+  <inherits name="net.petrusha.homebudget.gwt.utils.Utils"/>
+  
+  <source path='client' />
+
+</module>

@@ -1,0 +1,74 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder" 
+			 xmlns:g="urn:import:com.google.gwt.user.client.ui"
+			 xmlns:bgt="urn:import:net.petrusha.homebudget.gwt.budget.client.widget">
+	<ui:style>
+		.budget-title {
+			font-size: 1.3em;
+		}
+		
+		.budget-matrix-table {
+			
+		}
+		
+		.budget-matrix-table td {
+			text-align: right;
+		}
+		
+		.budget-matrix-table th {
+			text-align: right;
+			font-weight: normal;
+		}		
+		
+		.budget-margin-raw {
+			border-top: 1px solid #ccc;
+		}
+		
+		.budget-matrix-header-cell {
+			width: 7em;
+		}
+		
+		.border-top {
+			border-top: 1px solid #777;	
+		}
+		
+		.border-bottom {
+			border-bottom: 1px solid #777;	
+		}
+			
+	</ui:style>
+	<g:HTMLPanel>
+		<table>
+			<tr>
+				<td><g:Label ui:field="nameEditor" styleName="{style.budget-title}">Budget</g:Label></td>
+				<td class="{style.budget-title}">(<g:DateLabel ui:field="startDateEditor"/> &#8211; <g:DateLabel ui:field="endDateEditor"/>)</td>
+			</tr>
+		</table>
+		<table class="{style.budget-matrix-table}">	
+			<tr>
+				<th class="{style.border-bottom}"></th>
+				<th class="{style.budget-matrix-header-cell} {style.border-bottom}">Incomes</th>
+				<th class="{style.budget-matrix-header-cell} {style.border-bottom}">Expences</th>
+				<th class="{style.budget-matrix-header-cell} {style.border-bottom}">Total</th>
+			</tr>
+			<tr>
+				<th>Planned</th>
+				<td><bgt:PriceInfo ui:field="plannedIncomes">0.0</bgt:PriceInfo></td>
+				<td><bgt:PriceInfo ui:field="plannedExpenses">0.0</bgt:PriceInfo></td>
+				<td><bgt:PriceInfo ui:field="plannedTotal">0.0</bgt:PriceInfo></td>
+			</tr>
+			<tr>
+				<th>Real</th>
+				<td><bgt:PriceInfo ui:field="realIncomes">0.0</bgt:PriceInfo></td>
+				<td><bgt:PriceInfo ui:field="realExpenses">0.0</bgt:PriceInfo></td>
+				<td><bgt:PriceInfo ui:field="realTotal">0.0</bgt:PriceInfo></td>
+			</tr>
+			<tr class="{style.budget-margin-raw}">
+				<th class="{style.border-top}">Margin</th>
+				<td class="{style.border-top}"><bgt:PriceInfo ui:field="marginIncomes">0.0</bgt:PriceInfo></td>
+				<td class="{style.border-top}"><bgt:PriceInfo ui:field="marginExpenses">0.0</bgt:PriceInfo></td>
+				<td class="{style.border-top}"><bgt:PriceInfo ui:field="marginTotal">0.0</bgt:PriceInfo></td>
+			</tr>
+		</table>
+	</g:HTMLPanel>
+</ui:UiBinder>

@@ -1,0 +1,91 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder" 
+			 xmlns:g="urn:import:com.google.gwt.user.client.ui">
+
+	<ui:style>
+		.category {
+			/*border-bottom: 1px solid #ccc;*/
+		}
+		
+		.category input {
+			border-style: none;
+			border-bottom: 1px solid #ccc;
+			font-weight: bold;
+		}
+		
+		.item-field { 
+			float : left;
+			overflow: hidden;
+			border: 1px solid #ccc;
+			height: 22px;
+		}
+		.item-field-header {
+			float : left;
+		}
+		
+		.item-title {
+			width: 100px;
+		}
+		
+		.item-title input {
+			width: 96px;
+		}
+		
+		.item-description {
+			width: 80px;
+			display: none;
+		}
+		.item-date {
+			width: 80px;
+		}
+		
+		.item-date input {
+			width: 76px;
+		}
+		
+		.item-ammount {
+			width: 80px;
+        }
+        
+        .item-ammount input {
+			width: 46px;
+			text-align: right;
+			float:left:
+        }
+        
+        .item-currency-label {
+			margin-top: 2px;
+		}
+        
+        .item-form input {
+	    	height: 18px;
+	 		border: none;
+        }
+        
+        
+	</ui:style>
+	<g:HTMLPanel>
+		
+		<div class="{style.category}">Category: <g:SuggestBox ui:field="categoryEditor"/></div>
+		<div>
+			<div class="{style.item-title} {style.item-field-header}">Title</div>
+			<div class="{style.item-description} {style.item-field-header}">Description</div>
+			<div class="{style.item-ammount} {style.item-field-header}">Ammount</div>
+			<div class="{style.item-date} {style.item-field-header}">Date</div>
+			
+		</div>
+		<div class="clear"></div>
+		<div class="{style.item-form}">
+			<div class="{style.item-title} {style.item-field}"><g:TextBox ui:field="titleEditor"/></div>
+			<div class="{style.item-description} {style.item-field}"><g:TextBox ui:field="descriptionEditor" visible="false"/></div>
+			<div class="{style.item-ammount} {style.item-field}">
+			    <g:TextBox ui:field="ammountEditor"/><g:Label ui:field="currencyCodeEditor" styleName="{style.item-currency-label}"/>
+			</div>
+			<g:SimplePanel ui:field="datePlaceHolder"  styleName="{style.item-date} {style.item-field}"/>
+		</div>
+		<g:Button ui:field="submitButton">Add</g:Button>
+		<div class="clear"></div>
+		
+	</g:HTMLPanel>
+	
+</ui:UiBinder>

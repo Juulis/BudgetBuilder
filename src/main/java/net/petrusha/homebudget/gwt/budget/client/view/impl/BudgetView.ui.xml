@@ -1,0 +1,29 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder" 
+			 xmlns:g="urn:import:com.google.gwt.user.client.ui">
+
+	<ui:style>
+		
+	</ui:style>
+	<g:HTMLPanel styleName="budget-view">
+		<g:HorizontalPanel ui:field="header" styleName="header">
+		    <g:Label>From:</g:Label>
+			<g:Label ui:field="startDate"></g:Label>
+			<g:Label>To:</g:Label>
+			<g:Label ui:field="endDate"></g:Label>
+		</g:HorizontalPanel>
+		<g:VerticalPanel ui:field="budgetTable">
+			<g:HorizontalPanel>
+				<g:VerticalPanel>
+					<g:Label>Incomes</g:Label>
+					<g:SimplePanel ui:field="incomesPanel"></g:SimplePanel>
+				</g:VerticalPanel>
+				<g:VerticalPanel >
+					<g:Label>Expenses</g:Label>
+					<g:SimplePanel ui:field="expensesPanel"></g:SimplePanel>
+				</g:VerticalPanel>
+			</g:HorizontalPanel>
+		</g:VerticalPanel>
+	</g:HTMLPanel>
+	
+</ui:UiBinder>

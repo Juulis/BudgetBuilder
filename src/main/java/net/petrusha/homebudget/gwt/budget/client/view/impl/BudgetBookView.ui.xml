@@ -1,0 +1,17 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder" 
+			 xmlns:g="urn:import:com.google.gwt.user.client.ui">
+
+	<ui:style>
+		
+	</ui:style>
+	<g:HTMLPanel styleName="budget-book-view">
+		<div class="controls-bar">
+			<ul>
+				<li class="button"><g:Anchor ui:field="startNewBudgetButton" href="#">Start new Budget</g:Anchor></li>
+			</ul>
+		</div>
+		<g:SimplePanel ui:field="budgetPlaceHolder"></g:SimplePanel>
+	</g:HTMLPanel>
+	
+</ui:UiBinder>

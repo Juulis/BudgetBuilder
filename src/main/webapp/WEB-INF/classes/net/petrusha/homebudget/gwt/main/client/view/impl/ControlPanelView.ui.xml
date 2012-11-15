@@ -1,0 +1,20 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder" 
+			 xmlns:g="urn:import:com.google.gwt.user.client.ui">
+
+	<ui:style>
+		
+	</ui:style>
+	<g:HTMLPanel styleName="control-panel-view">
+	    <div class="currencies-panel">
+		<div class="controls-bar">
+			<ul>
+				<li class="button"><g:Anchor ui:field="newCurrancyButton" href="#">New</g:Anchor></li>
+				<li class="button"><g:Anchor ui:field="deleteCurrenciesButton" href="#">Delete</g:Anchor></li>
+			</ul>
+		</div>
+		<g:FlowPanel ui:field="currenciesList"></g:FlowPanel>
+		</div>
+	</g:HTMLPanel>
+	
+</ui:UiBinder>

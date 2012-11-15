@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE web-app
+    PUBLIC "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+    "http://java.sun.com/dtd/web-app_2_3.dtd">
+
+<web-app>
+
+  <!-- Servlets -->
+  <servlet>
+    <servlet-name>mainServlet</servlet-name>
+    <servlet-class>net.petrusha.homebudget.gwt.main.server.MainServiceImpl</servlet-class>
+  </servlet>
+  
+   <servlet>
+    <servlet-name>budgetServlet</servlet-name>
+    <servlet-class>net.petrusha.homebudget.gwt.budget.server.BudgetServiceImpl</servlet-class>
+   </servlet>
+
+  <servlet-mapping>
+    <servlet-name>mainServlet</servlet-name>
+    <url-pattern>/MainEntryPoint/main</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>budgetServlet</servlet-name>
+    <url-pattern>/MainEntryPoint/budget</url-pattern>
+  </servlet-mapping>
+
+  <!-- Default page to serve -->
+  <welcome-file-list>
+    <welcome-file>HomeBudgetEntryPoint.html</welcome-file>
+  </welcome-file-list>
+
+</web-app>
